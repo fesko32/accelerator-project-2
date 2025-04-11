@@ -1,0 +1,28 @@
+.social-icons {
+  width: 30px;
+  height: 30px;
+  border: 1px rgba($primary, .3);
+
+  &:hover {
+    border-color: $primary;
+  }
+
+  &:focus {
+    border-color: transparent;
+  }
+
+  &:active {
+    background-color: $buttom-primary-color;
+  }
+
+  &:active svg {
+    fill: $absolute-white;
+  }
+
+  &--disabled {
+    background-color: rgba($primary, .3);
+  }
+  &--disabled svg {
+    fill: rgba($primary, .3);
+  }
+}

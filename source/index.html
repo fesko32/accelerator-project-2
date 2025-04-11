@@ -5,26 +5,200 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lifetour</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
   <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="header">header</div>
-    <div data-test="hero">hero</div>
-    <div data-test="tours">tours</div>
-    <div data-test="training">training</div>
-    <div data-test="about">about</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="adv">adv</div>
+
+    <div class="hero__wrap" data-test="hero">
+      <header class="hero__header">
+        <div class="hero__inner-wrap container">
+          <button class="hero__button" aria-label="Кнопка открыть меню"
+          type="button">
+          <svg width="26" height="20">
+            <use href="/__spritemap#sprite-menu"></use>
+          </svg>
+          </button>
+
+          <a class="hero__link" href="#" aria-label="Логотип сайта Lifetour">
+            <svg width="142" height="42">
+              <use href="/__spritemap#sprite-logo"></use>
+            </svg>
+          </a>
+          <nav class="hero__nav">
+            <ul class="hero__list">
+              <li class="hero__item">
+                <a class="hero__item-link" href="#tours">Туры</a>
+              </li>
+              <li class="hero__item">
+                <a class="hero__item-link" href="#training">Обучение</a>
+              </li>
+              <li class="hero__item">
+                <a class="hero__item-link" href="#about">О нас</a>
+              </li>
+              <li class="hero__item">
+                <a class="hero__item-link" href="#reviews">Отзывы</a>
+              </li>
+              <li class="hero__item">
+                <a class="hero__item-link" href="#adv">Фотографии</a>
+              </li>
+              <li class="hero__item">
+                <a class="hero__item-link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="hero__tel" href="tel:+88000000000">8 800 000-00-00</a>
+        </div>
+      </header>
+
+      <div class="hero__content">
+        <div class="hero__swiper swiper">
+          <!-- Additional required wrapper -->
+          <ul class="hero__swiper-wrapper swiper-wrapper">
+            <!-- Slides -->
+            <li class="hero__swiper-slide swiper-slide">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  type="image/jpeg"
+                  width="1440"
+                  height="800"
+                  srcset="img/hero-slider-desktop-1@1x.jpg 1x, img/hero-slider-desktop-1@2x.jpg 2x"
+                >
+
+                <source media="(min-width: 768px)"
+                  type="image/jpeg"
+                  width="768"
+                  height="1034"
+                  srcset="img/hero-slider-tablet-1@1x.jpg 1x, img/hero-slider-tablet-1@2x.jpg 2x"
+                >
+
+                <img class="hero__swiper-image"
+                  src="img/hero-slider-mobile-1@1x.jpg"
+                  srcset="img/hero-slider-mobile-1@2x.jpg 2x"
+                  width="320"
+                  height="568"
+                  alt="Горы кавказа"
+                >
+              </picture>
+              <div class="hero__swiper-content-wrap container">
+                <h1 class="hero__swiper-title">Захватывающие вершины Кавказа</h1>
+                <p class="hero__swiper-subtitle">
+                  В&nbsp;сопровождении опытных гидов
+                  вы&nbsp;пройдёте через&nbsp;потрясающие
+                  ландшафты и&nbsp;совершите восход
+                  на&nbsp;вершину горы Чегет.
+                </p>
+                <a class="hero__swiper-link" href="#">Смотреть тур</a>
+              </div>
+            </li>
+            <li class="hero__swiper-slide swiper-slide">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  type="image/jpeg"
+                  width="1440"
+                  height="800"
+                  srcset="img/hero-slider-desktop-2@1x.jpg 1x, img/hero-slider-desktop-2@2x.jpg 2x"
+                >
+
+                <source media="(min-width: 768px)"
+                  type="image/jpeg"
+                  width="768"
+                  height="1034"
+                  srcset="img/hero-slider-tablet-2@1x.jpg 1x, img/hero-slider-tablet-2@2x.jpg 2x"
+                >
+
+                <img class="hero__swiper-image"
+                  src="img/hero-slider-mobile-2@1x.jpg"
+                  srcset="img/hero-slider-mobile-2@2x.jpg 2x"
+                  width="320"
+                  height="568"
+                  alt="Горы кавказа"
+                >
+              </picture>
+              <div class="hero__swiper-content-wrap hero__swiper-content-wrap--pt-sm container">
+                <h1 class="hero__swiper-title">Невероятная природа Камчатки</h1>
+                <p class="hero__swiper-subtitle">
+                  Незабываемое приключение,  во&nbsp;время которого вы&nbsp;отправитесь  в&nbsp;путешествие по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы&nbsp;в&nbsp;мире.
+                </p>
+                <a class="hero__swiper-link" href="#">Смотреть тур</a>
+
+                <!-- <picture>
+                  <source media="(min-width: 1440px)"
+                  type="image/jpeg"
+                  width="1440"
+                  height="800"
+                  srcset="img/hero-slider-desktop-2@1x.jpg 1x, img/hero-slider-desktop-2@2x.jpg 2x"
+                >
+
+                <source media="(min-width: 768px)"
+                  type="image/jpeg"
+                  width="768"
+                  height="1034"
+                  srcset="img/hero-slider-tablet-2@1x.jpg 1x, img/hero-slider-tablet-2@2x.jpg 2x"
+                >
+
+                <img class="hero__swiper-image"
+                  src="img/hero-slider-mobile-2@1x.jpg"
+                  srcset="img/hero-slider-mobile-2@2x.jpg 2x"
+                  width="320"
+                  height="568"
+                  alt="Фотокарточки"
+                >
+                </picture> -->
+              </div>
+            </li>
+            <li class="hero__swiper-slide swiper-slide">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  type="image/jpeg"
+                  width="1440"
+                  height="800"
+                  srcset="img/hero-slider-desktop-3@1x.jpg 1x, img/hero-slider-desktop-3@2x.jpg 2x"
+                >
+
+                <source media="(min-width: 768px)"
+                  type="image/jpeg"
+                  width="768"
+                  height="1034"
+                  srcset="img/hero-slider-tablet-3@1x.jpg 1x, img/hero-slider-tablet-3@2x.jpg 2x"
+                >
+
+                <img class="hero__swiper-image"
+                  src="img/hero-slider-mobile-3@1x.jpg"
+                  srcset="img/hero-slider-mobile-3@2x.jpg 2x"
+                  width="320"
+                  height="568"
+                  alt="Горы кавказа"
+                >
+              </picture>
+              <div class="hero__swiper-content-wrap hero__swiper-content-wrap--pt-sm container">
+                <h1 class="hero__swiper-title">Магические пейзажи Алтайского Края</h1>
+                <p class="hero__swiper-subtitle">
+                  Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.
+                </p>
+                <a class="hero__swiper-link" href="#">Смотреть тур</a>
+              </div>
+            </li>
+            ...
+          </ul>
+          <!-- If we need pagination -->
+        </div>
+        <div class="swiper-pagination swiper-pagination__wrap">
+        </div>
+      </div>
+   </div>
+    <div data-test="tours" id="tours">tours</div>
+    <div data-test="training" id="training">training</div>
+    <div data-test="about" id="about">about</div>
+    <div data-test="reviews" id="reviews">reviews</div>
+    <div data-test="adv" id="adv">adv</div>
     <div data-test="gallery">gallery</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+    <div data-test="form">
+      <div class="form__contacts" id="contacts"></div>
+    </div>
+    <footer data-test="footer">footer</footer>
     <script type="module" src="js/main.js"></script>
   </body>
 
