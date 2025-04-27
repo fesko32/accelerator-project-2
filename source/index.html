@@ -12,8 +12,8 @@
 
   <body class="page-body">
 
-    <div class="hero__wrap" data-test="hero">
-      <header class="hero__header">
+    <div class="hero__wrap">
+      <header class="hero__header" data-test="header">
         <div class="hero__inner-wrap container">
           <button class="hero__button" aria-label="Кнопка открыть меню"
           type="button">
@@ -53,7 +53,7 @@
         </div>
       </header>
 
-      <div class="hero__content">
+      <div class="hero__content" data-test="hero">
         <div class="hero__swiper swiper">
           <!-- Additional required wrapper -->
           <ul class="hero__swiper-wrapper swiper-wrapper">
@@ -352,19 +352,22 @@
    </div>
     <section data-test="tours" id="tours">
       <div class="tours__inner-wrap container">
-        <h2 class="tours__title">Ближайшие туры</h2>
-        <div class="tours__button-wrap">
-          <button class="tours__button arrow-button arrow-button--prev" type="button">
-            <svg width="14" height="9">
-              <use href="/__spritemap#sprite-arrow-button"></use>
-            </svg>
-          </button>
-          <button class="tours__button arrow-button arrow-button--next" type="button">
-            <svg width="14" height="9">
-              <use href="/__spritemap#sprite-arrow-button"></use>
-            </svg>
-          </button>
-        </div>
+
+          <h2 class="tours__title">Ближайшие туры</h2>
+
+
+          <div class="tours__button-wrap">
+            <button class="tours__button arrow-button arrow-button--prev" type="button">
+              <svg width="14" height="9">
+                <use href="/__spritemap#sprite-arrow-button"></use>
+              </svg>
+            </button>
+            <button class="tours__button arrow-button arrow-button--next" type="button">
+              <svg width="14" height="9">
+                <use href="/__spritemap#sprite-arrow-button"></use>
+              </svg>
+            </button>
+          </div>
         <div class="tours__swiper swiper">
           <ul class="tours__swiper-wrapper swiper-wrapper">
             <li class="tours__swiper-slide swiper-slide">
@@ -435,11 +438,27 @@
                     </div>
                   </div>
                 </div>
-                <h3 class="tours__title-card">Путешествие вокруг Эльбруса</h3>
+                <h3 class="tours__title-card">Путешествие вокруг&nbsp;Эльбруса</h3>
                 <ul>
                   <li>
                     <span class="tours__element-title">Сложность:</span>
-                    <span class="tours__card-stars"></span>
+                    <span class="tours__card-stars">
+                      <svg width="16" height="16">
+                        <use href="/__spritemap#sprite-star"></use>
+                      </svg>
+                      <svg width="16" height="16">
+                        <use href="/__spritemap#sprite-star"></use>
+                      </svg>
+                      <svg width="16" height="16">
+                        <use href="/__spritemap#sprite-star"></use>
+                      </svg>
+                      <svg width="16" height="16">
+                        <use href="/__spritemap#sprite-star"></use>
+                      </svg>
+                      <svg width="16" height="16">
+                        <use href="/__spritemap#sprite-empty-star"></use>
+                      </svg>
+                    </span>
                   </li>
                   <li>
                     <span class="tours__element-title">Даты набора:</span>
@@ -522,11 +541,27 @@
                     </div>
                   </div>
                 </div>
-                <h3 class="tours__title-card">Путь к подножию Белухи</h3>
+                <h3 class="tours__title-card">Путь к подножию Белухи&nbsp;</h3>
                 <ul>
                   <li>
                     <span class="tours__element-title">Сложность:</span>
-                    <span class="tours__card-stars"></span>
+                    <span class="tours__card-stars">
+                      <svg width="16" height="16">
+                        <use href="/__spritemap#sprite-star"></use>
+                      </svg>
+                      <svg width="16" height="16">
+                        <use href="/__spritemap#sprite-star"></use>
+                      </svg>
+                      <svg width="16" height="16">
+                        <use href="/__spritemap#sprite-star"></use>
+                      </svg>
+                      <svg width="16" height="16">
+                        <use href="/__spritemap#sprite-empty-star"></use>
+                      </svg>
+                      <svg width="16" height="16">
+                        <use href="/__spritemap#sprite-empty-star"></use>
+                      </svg>
+                    </span>
                   </li>
                   <li>
                     <span class="tours__element-title">Даты набора:</span>
@@ -608,11 +643,27 @@
                     </div>
                   </div>
                 </div>
-                <h3 class="tours__title-card">Через Фишт к Чёрному морю и обратно</h3>
+                <h3 class="tours__title-card">Через Фишт <br>к Чёрному морю и&nbsp;обратно</h3>
                 <ul>
                   <li>
                     <span class="tours__element-title">Сложность:</span>
-                    <span class="tours__card-stars"></span>
+                    <span class="tours__card-stars">
+                      <svg width="16" height="16">
+                        <use href="/__spritemap#sprite-star"></use>
+                      </svg>
+                      <svg width="16" height="16">
+                        <use href="/__spritemap#sprite-star"></use>
+                      </svg>
+                      <svg width="16" height="16">
+                        <use href="/__spritemap#sprite-star"></use>
+                      </svg>
+                      <svg width="16" height="16">
+                        <use href="/__spritemap#sprite-star"></use>
+                      </svg>
+                      <svg width="16" height="16">
+                        <use href="/__spritemap#sprite-empty-star"></use>
+                      </svg>
+                    </span>
                   </li>
                   <li>
                     <span class="tours__element-title">Даты набора:</span>
@@ -632,34 +683,34 @@
                         type="image/webp"
                         width="380"
                         height="416"
-                        srcset="img/tours-card-desktop-1@1x.webp 1x, img/tours-card-desktop-1@2x.webp 2x">
+                        srcset="img/tours-card-desktop-4@1x.webp 1x, img/tours-card-desktop-4@2x.webp 2x">
 
                 <source media="(min-width: 768px)"
                         type="image/webp"
                         width="330"
                         height="416"
-                        srcset="img/tours-card-tablet-1@1x.webp 1x, img/tours-card-tablet-1@2x.webp 2x">
+                        srcset="img/tours-card-tablet-4@1x.webp 1x, img/tours-card-tablet-4@2x.webp 2x">
 
                 <source type="image/webp"
                         width="290"
                         height="416"
-                        srcset="img/tours-card-mobile-1@1x.webp 1x, img/tours-card-mobile-1@2x.webp 2x">
+                        srcset="img/tours-card-mobile-4@1x.webp 1x, img/tours-card-mobile-4@2x.webp 2x">
 
                 <source media="(min-width: 1440px)"
                         type="image/jpeg"
                         width="1440"
                         height="800"
-                        srcset="img/tours-card-desktop-1@1x.jpg 1x, img/tours-card-desktop-1@2x.jpg 2x">
+                        srcset="img/tours-card-desktop-4@1x.jpg 1x, img/tours-card-desktop-4@2x.jpg 2x">
 
                 <source media="(min-width: 768px)"
                         type="image/jpeg"
                         width="330"
                         height="416"
-                        srcset="img/tours-card-tablet-1@1x.jpg 1x, img/tours-card-tablet-1@2x.jpg 2x">
+                        srcset="img/tours-card-tablet-4@1x.jpg 1x, img/tours-card-tablet-4@2x.jpg 2x">
 
                 <img class="tours__card-image"
-                     src="img/tours-card-mobile-1@1x.jpg"
-                     srcset="img/tours-card-mobile-1@2x.jpg 2x"
+                     src="img/tours-card-mobile-4@1x.jpg"
+                     srcset="img/tours-card-mobile-4@2x.jpg 2x"
                      width="290"
                      height="416"
                      alt="Эльбрус">
@@ -672,7 +723,7 @@
                       <svg width="9" height="12">
                         <use href="/__spritemap#sprite-pin-transparent"></use>
                       </svg>
-                      Кавказ
+                      Урал
                     </span>
                   </div>
                   <div class="tours__timeday-wrap">
@@ -681,7 +732,7 @@
                         <svg width="20" height="20">
                           <use href="/__spritemap#sprite-sun"></use>
                         </svg>
-                        4 дня
+                        9 дней
                       </span>
                     </div>
                     <div class="tours__timeday-element">
@@ -689,206 +740,56 @@
                         <svg width="20" height="20">
                           <use href="/__spritemap#sprite-moon"></use>
                         </svg>
-                        3 ночи
+                        10 ночей
                       </span>
                     </div>
                   </div>
                 </div>
-                <h3 class="tours__title-card">Путешествие вокруг Эльбруса</h3>
+                <h3 class="tours__title-card">Восхождение
+                  Манарага</h3>
                 <ul>
                   <li>
                     <span class="tours__element-title">Сложность:</span>
-                    <span class="tours__card-stars"></span>
-                  </li>
-                  <li>
-                    <span class="tours__element-title">Даты набора:</span>
-                    <span class="tours__element-subtitle">12.06–19.06</span>
-                  </li>
-                  <li>
-                    <span class="tours__element-title">Группа:</span>
-                    <span class="tours__element-subtitle">до 15 чел.</span>
-                  </li>
-                </ul>
-              </div>
-
-            </li>
-
-            <li class="tours__swiper-slide swiper-slide">
-              <picture>
-                <source media="(min-width: 1440px)"
-                        type="image/webp"
-                        width="380"
-                        height="416"
-                        srcset="img/tours-card-desktop-2@1x.webp 1x, img/tours-card-desktop-2@2x.webp 2x">
-
-                <source media="(min-width: 768px)"
-                        type="image/webp"
-                        width="330"
-                        height="416"
-                        srcset="img/tours-card-tablet-2@1x.webp 1x, img/tours-card-tablet-2@2x.webp 2x">
-
-                <source type="image/webp"
-                        width="290"
-                        height="416"
-                        srcset="img/tours-card-mobile-2@1x.webp 1x, img/tours-card-mobile-2@2x.webp 2x">
-
-                <source media="(min-width: 1440px)"
-                        type="image/jpeg"
-                        width="1440"
-                        height="800"
-                        srcset="img/tours-card-desktop-2@1x.jpg 1x, img/tours-card-desktop-2@2x.jpg 2x">
-
-                <source media="(min-width: 768px)"
-                        type="image/jpeg"
-                        width="330"
-                        height="416"
-                        srcset="img/tours-card-tablet-2@1x.jpg 1x, img/tours-card-tablet-2@2x.jpg 2x">
-
-                <img class="tours__card-image"
-                     src="img/tours-card-mobile-2@1x.jpg"
-                     srcset="img/tours-card-mobile-2@2x.jpg 2x"
-                     width="290"
-                     height="416"
-                     alt="Алтай">
-              </picture>
-
-              <div class="tours__content-wrap">
-                <div class="tours__top-wrap">
-                  <div class="tours__label-geo">
-                    <span class="tours__geo-element">
-                      <svg width="9" height="12">
-                        <use href="/__spritemap#sprite-pin-transparent"></use>
+                    <span class="tours__card-stars">
+                      <svg width="16" height="16">
+                        <use href="/__spritemap#sprite-star"></use>
                       </svg>
-                      Алтай
-                    </span>
-                  </div>
-                  <div class="tours__timeday-wrap">
-                    <div class="tours__timeday-element">
-                      <span>
-                        <svg width="20" height="20">
-                          <use href="/__spritemap#sprite-sun"></use>
-                        </svg>
-                        14 дней
-                      </span>
-                    </div>
-                    <div class="tours__timeday-element">
-                      <span>
-                        <svg width="20" height="20">
-                          <use href="/__spritemap#sprite-moon"></use>
-                        </svg>
-                        13 ночей
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <h3 class="tours__title-card">Путь к подножию Белухи</h3>
-                <ul>
-                  <li>
-                    <span class="tours__element-title">Сложность:</span>
-                    <span class="tours__card-stars"></span>
-                  </li>
-                  <li>
-                    <span class="tours__element-title">Даты набора:</span>
-                    <span class="tours__element-subtitle">14.06–23.06</span>
-                  </li>
-                  <li>
-                    <span class="tours__element-title">Группа:</span>
-                    <span class="tours__element-subtitle">до 25 чел.</span>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="tours__swiper-slide swiper-slide">
-              <picture>
-                <source media="(min-width: 1440px)"
-                        type="image/webp"
-                        width="380"
-                        height="416"
-                        srcset="img/tours-card-desktop-3@1x.webp 1x, img/tours-card-desktop-3@2x.webp 2x">
-
-                <source media="(min-width: 768px)"
-                        type="image/webp"
-                        width="330"
-                        height="416"
-                        srcset="img/tours-card-tablet-3@1x.webp 1x, img/tours-card-tablet-3@2x.webp 2x">
-
-                <source type="image/webp"
-                        width="290"
-                        height="416"
-                        srcset="img/tours-card-mobile-3@1x.webp 1x, img/tours-card-mobile-3@2x.webp 2x">
-
-                <source media="(min-width: 1440px)"
-                        type="image/jpeg"
-                        width="1440"
-                        height="800"
-                        srcset="img/tours-card-desktop-3@1x.jpg 1x, img/tours-card-desktop-3@2x.jpg 2x">
-
-                <source media="(min-width: 768px)"
-                        type="image/jpeg"
-                        width="330"
-                        height="416"
-                        srcset="img/tours-card-tablet-3@1x.jpg 1x, img/tours-card-tablet-3@2x.jpg 2x">
-
-                <img class="tours__card-image"
-                     src="img/tours-card-mobile-3@1x.jpg"
-                     srcset="img/tours-card-mobile-3@2x.jpg 2x"
-                     width="290"
-                     height="416"
-                     alt="Адыгея">
-              </picture>
-
-              <div class="tours__content-wrap">
-               <div class="tours__top-wrap">
-                  <div class="tours__label-geo">
-                    <span class="tours__geo-element">
-                      <svg width="9" height="12">
-                        <use href="/__spritemap#sprite-pin-transparent"></use>
+                      <svg width="16" height="16">
+                        <use href="/__spritemap#sprite-star"></use>
                       </svg>
-                      Адыгея
+                      <svg width="16" height="16">
+                        <use href="/__spritemap#sprite-star"></use>
+                      </svg>
+                      <svg width="16" height="16">
+                        <use href="/__spritemap#sprite-star"></use>
+                      </svg>
+                      <svg width="16" height="16">
+                        <use href="/__spritemap#sprite-star"></use>
+                      </svg>
                     </span>
-                  </div>
-                  <div class="tours__timeday-wrap">
-                    <div class="tours__timeday-element">
-                      <span>
-                        <svg width="20" height="20">
-                          <use href="/__spritemap#sprite-sun"></use>
-                        </svg>
-                        7 дней
-                      </span>
-                    </div>
-                    <div class="tours__timeday-element">
-                      <span>
-                        <svg width="20" height="20">
-                          <use href="/__spritemap#sprite-moon"></use>
-                        </svg>
-                        6 ночей
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <h3 class="tours__title-card">Через Фишт к Чёрному морю и обратно</h3>
-                <ul>
-                  <li>
-                    <span class="tours__element-title">Сложность:</span>
-                    <span class="tours__card-stars"></span>
                   </li>
                   <li>
                     <span class="tours__element-title">Даты набора:</span>
-                    <span class="tours__element-subtitle">15.07–19.07</span>
+                    <span class="tours__element-subtitle">12.07–19.07</span>
                   </li>
                   <li>
                     <span class="tours__element-title">Группа:</span>
-                    <span class="tours__element-subtitle">до 22 чел.</span>
+                    <span class="tours__element-subtitle">до 7 чел.</span>
                   </li>
                 </ul>
               </div>
+
             </li>
+
           </ul>
 
-
-          <a class="tours__link" href="#">Показать все туры</a>
         </div>
+
+        <a class="tours__link" href="#">Показать все туры
+          <svg width="9" height="14">
+            <use href="/__spritemap#sprite-arrow"></use>
+          </svg>
+        </a>
       </div>
     </section>
     <div data-test="training" id="training">training</div>

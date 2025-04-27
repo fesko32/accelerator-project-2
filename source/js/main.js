@@ -2,9 +2,8 @@ import Swiper from "swiper";
 import { Navigation, Pagination } from "swiper/modules";
 
 
-Swiper.use([Pagination, Navigation]);
-
 const swiper = new Swiper('.hero__swiper.swiper', {
+  modules: [Pagination, Navigation],
   pagination: {
 
     el: ".swiper-pagination",
@@ -17,26 +16,32 @@ const swiper = new Swiper('.hero__swiper.swiper', {
 
 const swiper2 = new Swiper('.tours__swiper.swiper', {
   modules: [Navigation],
-  grabCursor: true,
   loop: false,
-  slidesPerView: 1,
+  initialSlide: 0,
   preloadImages: false,
   lazy: true,
+  slidesPerView: 1,
+  slidesPerGroup: 1,
   navigation: {
-    prevEl: '.tours__button.arrow-button--prev',
-    nextEl: '.tours__button.arrow-button--next',
+    nextEl: '.arrow-button--next',
+    prevEl: '.arrow-button--prev',
   },
   breakpoints: {
     336: {
-      slidesPerView: 1, // Явно указываем
+      slidesPerView: 1,
+      slidesPerGroup: 1,
     },
     768: {
-      slidesPerView: 2,// Листаем по 1, даже если видно 2
+      slidesPerView: 2,
+      slidesPerGroup: 1,
       spaceBetween: 18,
     },
     1440: {
-      slidesPerView: 3, // Листаем по 1, даже если видно 3
+      slidesPerView: 3,
+      slidesPerGroup: 1,
       spaceBetween: 30,
     },
   },
 });
+
+

@@ -3,9 +3,15 @@
   height: 35px;
   background-color: $buttom-primary-color;
   border: 1px solid transparent;
-
+  transition: 0.3s;
+  use {
+    fill: $absolute-white;
+  }
   &:hover {
     border-color: #1C3374;
+  }
+  &:hover use {
+    fill: #1C3374;
   }
 
   svg:hover, svg:focus {
@@ -16,12 +22,22 @@
     background-color: transparent;
   }
 
-  &:focus {
+  &:focus{
     border-color: transparent;
+    outline: none;
   }
+
+  &:focus use {
+    fill: #1C3374;
+  }
+
 
   &:active {
     background-color: #1C3374;
+  }
+
+  &:active use {
+    fill: $absolute-white;
   }
 
   svg:active {
@@ -30,9 +46,17 @@
 
   &:disabled {
     background-color: #999999;
+    border-color: transparent;
 
     svg {
       fill: $absolute-white;
     }
+  }
+
+  &:disabled use {
+    fill: $absolute-white;
+  }
+  &--next  {
+    transform: rotate(180deg);
   }
 }
