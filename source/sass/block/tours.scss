@@ -1,8 +1,53 @@
 .tours {
+  position: relative;
+
+  &::after {
+    right: 0;
+    top: 0;
+    content: '';
+    width: 346px;
+    height: 595px;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    background-image: image-set(
+    url("../../img/clouds-mobile-1@1x.webp") type("image/webp") 1x,
+    url("../../img/clouds-mobile-1@2x.webp") type("image/webp") 2x,
+    url("../../img/clouds-mobile-1@1x@1x.png") type("image/png") 1x,
+    url("../../img/clouds-mobile-1@2x@2x.png") type("image/png") 2x,
+  );
+  background-repeat: no-repeat;
+  background-position: right 10px;
+
+  @include vp-768 {
+    width: 602px;
+    height: 1630px;
+    background-image: image-set(
+      url("../../img/clouds-tablet-1@1x.webp") type("image/webp") 1x,
+      url("../../img/clouds-tablet-1@2x.webp") type("image/webp") 2x,
+      url("../../img/clouds-tablet-1@1x@1x.png") type("image/png") 1x,
+      url("../../img/clouds-tablet-1@2x@2x.png") type("image/png") 2x,
+    );
+    background-position: right -92px;
+  }
+
+  @include vp-1440 {
+    background-image: image-set(
+      url("../../img/clouds-desktop-1@1x.webp") type("image/webp") 1x,
+      url("../../img/clouds-desktop-1@2x.webp") type("image/webp") 2x,
+      url("../../img/clouds-desktop-1@1x@1x.png") type("image/png") 1x,
+      url("../../img/clouds-desktop-1@2x@2x.png") type("image/png") 2x,
+    );
+
+    background-position: right -126px;
+  }
+}
 
 }
 .tours__inner-wrap {
   padding-top: 39px;
+  padding-bottom: 40px;
+
 
   @include vp-768 {
     position: relative;
@@ -14,6 +59,7 @@
     flex-direction: column;
 
     padding-top: 123px;
+    padding-bottom: 100px;
   }
 }
 
@@ -26,6 +72,10 @@
 
 .tours__swiper {
   margin: 0 0 25px 0;
+
+  @include vp-768 {
+    margin: 0 0 26px 0;
+  }
 
   @include vp-1440 {
     margin: 0 0 54px 0;
@@ -92,6 +142,17 @@
   min-height: 416px;
   height: auto;
 
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: $gradient-cards-color;
+  }
+
 
   picture {
     position: absolute;
@@ -100,15 +161,7 @@
     z-index: -1;
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: $gradient-cards-color;
-  }
+
 }
 
 .tours__content-wrap {
@@ -116,6 +169,8 @@
   position: relative;
   z-index: 1;
   padding: 0 20px 30px;
+
+
 
   ul {
     display: flex;
@@ -131,9 +186,8 @@
     justify-content: space-between
   }
 
-  li:not(:first-child) {
-    margin-right: 1px;
-  }
+
+
 }
 
 .tours__top-wrap {
@@ -267,16 +321,23 @@
   justify-content: center;
   align-self: center;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 100%;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   text-decoration: none;
   color: $primary;
   gap: 12px;
-  padding: 10px 3px 10px 10px;
+  padding: 10px 7px 10px 9px;
+  transition: 0.3s;
 
+  @include vp-768 {
+    font-size: 16px;
+    use {
 
+      transform: translateY(-1px);
+    }
+  }
 
   &:hover {
     color: rgba($primary, 0.2);

@@ -47,7 +47,8 @@
   display: inline-flex;
 
   @include vp-768 {
-    width: 255px;
+    height: 42px;
+    margin-left: 114px;
     height: 42px;
     justify-content: flex-end;
     grid-column: 2 / 3;
