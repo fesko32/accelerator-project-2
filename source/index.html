@@ -11,8 +11,7 @@
   </head>
 
   <body class="page-body">
-    <main class="main">
-      <div class="hero__wrap">
+    <div class="hero__wrap">
         <header class="hero__header" data-test="header">
           <div class="hero__inner-wrap container">
             <button class="hero__button" aria-label="Кнопка открыть меню"
@@ -349,7 +348,8 @@
           <div class="swiper-pagination swiper-pagination__wrap">
           </div>
         </div>
-     </div>
+    </div>
+    <main class="main">
       <section class="tours" data-test="tours" id="tours">
         <div class="tours__inner-wrap container">
             <h2 class="tours__title">Ближайшие туры</h2>
@@ -792,7 +792,7 @@
       <section class="training" data-test="training" id="training">
         <div class="training__inner-wrap container">
           <h2 class="training__title">Обучение</h2>
-          <p class="training__paragraph">
+          <p>
             Обучение проводится квалифицированными специалистами,<br> за&nbsp;плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.
           </p>
           <h3 class="training__subtitle">Наши инструкторы</h3>
@@ -847,13 +847,13 @@
                         alt="Фото инструктора Александра Прокофьева">
                 </picture>
                 <div class="training__text-wrap">
-                  <h4 class="training__slide-title">Александр<br>Прокофьев</h4>
+                  <h4>Александр<br>Прокофьев</h4>
                   <a class="training__slide-social-link" href="#" aria-label="Социальная сеть инструктора Александра Прокофьева">
                     <svg width="14" height="8">
                       <use href="/__spritemap#sprite-vk"></use>
                     </svg>
                   </a>
-                  <p class="training__slide-paragraph">
+                  <p>
                     Строгий&nbsp;и&nbsp;внимательный инструктор, весёлый и общительный человек. Любит природу.
                   </p>
                 </div>
@@ -896,13 +896,13 @@
                         alt="Фото инструктора Светланы Афиногеновой">
                 </picture>
                 <div class="training__text-wrap">
-                  <h4 class="training__slide-title">Светлана<br>Афиногенова</h4>
+                  <h4>Светлана<br>Афиногенова</h4>
                   <a class="training__slide-social-link" href="#" aria-label="Социальная сеть инструктора Светланы Афиногеновой">
                     <svg width="14" height="8">
                       <use href="/__spritemap#sprite-vk"></use>
                     </svg>
                   </a>
-                  <p class="training__slide-paragraph">
+                  <p>
                     Видеть мир вокруг, познавать его&nbsp;опасности, находить друг друга, становиться ближе, чувствовать — в&nbsp;этом назначение жизни.
                   </p>
                 </div>
@@ -945,13 +945,13 @@
                         alt="Фото инструктора Надежды Колесниченко">
                 </picture>
                 <div class="training__text-wrap">
-                  <h4 class="training__slide-title">Надежда<br>Колесниченко</h4>
+                  <h4>Надежда<br>Колесниченко</h4>
                   <a class="training__slide-social-link" href="#" aria-label="Социальная сеть инструктора Надежды Колесниченко">
                     <svg width="14" height="8">
                       <use href="/__spritemap#sprite-vk"></use>
                     </svg>
                   </a>
-                  <p class="training__slide-paragraph">
+                  <p>
                     Участники говорят,<br> что Надежда ответственная, приятная в&nbsp;общении, и&nbsp;в&nbsp;поездках с&nbsp;ней&nbsp;чувствуешь себя спокойно и&nbsp;уверенно.
                   </p>
                 </div>
@@ -994,13 +994,13 @@
                         alt="Фото инструктора Федора Кайгородова">
                 </picture>
                 <div class="training__text-wrap">
-                  <h4 class="training__slide-title">Федор<br>Кайгородов</h4>
+                  <h4>Федор<br>Кайгородов</h4>
                   <a class="training__slide-social-link" href="#" aria-label="Социальная сеть инструктора Федора Кайгородова">
                     <svg width="14" height="8">
                       <use href="/__spritemap#sprite-vk"></use>
                     </svg>
                   </a>
-                  <p class="training__slide-paragraph">
+                  <p>
                     Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.
                   </p>
                 </div>
@@ -1043,13 +1043,13 @@
                         alt="Фото инструктора Даниэля Васнецова">
                 </picture>
                 <div class="training__text-wrap">
-                  <h4 class="training__slide-title">Даниэль<br>Васнецов</h4>
+                  <h4>Даниэль<br>Васнецов</h4>
                   <a class="training__slide-social-link" href="#" aria-label="Социальная сеть инструктора Даниэля Васнецова">
                     <svg width="14" height="8">
                       <use href="/__spritemap#sprite-vk"></use>
                     </svg>
                   </a>
-                  <p class="training__slide-paragraph">
+                  <p>
                     Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.
                   </p>
                 </div>
@@ -1057,16 +1057,310 @@
             </ul>
           </div>
         </div>
+        <div class="training__process-wrap container">
+          <h3 class="training__process-title">Процесс обучения</h3>
+          <ul class="training__process-list">
+            <li class="training__process-item">
+              <svg width="25" height="25">
+                <use href="/__spritemap#sprite-map"></use>
+              </svg>
+              <p class="training__process-paragraph">Изучение спортивного туристского&nbsp;движения</p>
+            </li>
+
+            <li class="training__process-item">
+              <svg width="25" height="25">
+                <use href="/__spritemap#sprite-boot"></use>
+              </svg>
+              <p class="training__process-paragraph">Подготовка и&nbsp;техническое снаряжение в походах</p>
+            </li>
+
+            <li class="training__process-item training__process-item--bfr-position">
+              <svg width="25" height="25">
+                <use href="/__spritemap#sprite-eating"></use>
+              </svg>
+              <p class="training__process-paragraph training__process-paragraph--width">Лекции по&nbsp;окружающей среде, экологии и гигиене</p>
+            </li>
+
+            <li class="training__process-item">
+              <svg width="25" height="25">
+                <use href="/__spritemap#sprite-mountain"></use>
+              </svg>
+              <p class="training__process-paragraph training__process-paragraph--width">Разъяснение сложности горных препятствий</p>
+            </li>
+          </ul>
+        </div>
       </section>
-      <div data-test="about" id="about">about</div>
-      <div data-test="reviews" id="revieЗws">reviews</div>
+      <section class="about" data-test="about" id="about">
+        <div class="about__inner-wrap">
+          <div class="about__picture-wrap">
+            <picture>
+              <source media="(min-width: 1440px)"
+                      type="image/webp"
+                      width="660"
+                      height="498"
+                      srcset="img/about-desktop@1x.webp 1x, img/about-desktop@2x.webp 2x">
+
+              <source media="(min-width: 768px)"
+                      type="image/webp"
+                      width="542"
+                      height="350"
+                      srcset="img/about-tablet@1x.webp 1x, img/about-tablet@2x.webp 2x">
+
+              <source type="image/webp"
+                      width="434"
+                      height="400"
+                      srcset="img/about-mobile@1x.webp 1x, img/about-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1440px)"
+                      type="image/jpeg"
+                      width="660"
+                      height="498"
+                      srcset="img/about-desktop@1x.jpg 1x, img/about-desktop@2x.jpg 2x">
+
+              <source media="(min-width: 768px)"
+                      type="image/jpeg"
+                      width="542"
+                      height="350"
+                      srcset="img/about-tablet@1x.jpg 1x, img/about-tablet@2x.jpg 2x">
+
+              <img class="about__image"
+                   src="img/about-mobile@1x.jpg"
+                   srcset="img/about-mobile@2x.jpg 2x"
+                   width="434"
+                   height="400"
+                   alt="Фото с похода">
+            </picture>
+          </div>
+          <div class="about__content-wrap container">
+            <h2>О нас</h2>
+            <ul>
+              <li>
+                <h3>История компании</h3>
+                <p>
+                  В далёком 2000 году мы начали заниматься туризмом — походы, поездки, <br>восхождения, нам&nbsp;это&nbsp;настолько понравилось, что мы этим стали&nbsp;жить. Спустя&nbsp;5 лет, в 2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.
+                </p>
+              </li>
+              <li>
+                <h3>Наша цель</h3>
+                <p>
+                  Подарить вам незабываемые впечатления от похода в горы. Мы берём на себя все организационные вопросы. При организации мы обязательно учтём все ваши пожелания. Вам останется только наслаждаться незабываемым приключением в приятной компании.
+                </p>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </section>
+      <section class="reviews" data-test="reviews" id="revieЗws">
+        <div class="reviews__inner-wrap container">
+          <h2 class="reviews__title">Отзывы</h2>
+
+          <div class="reviews__swiper-container swiper">
+            <ul class="reviews__list swiper-wrapper">
+              <li class="reviews__item swiper-slide">
+                <picture>
+                  <source media="(min-width: 1440px)"
+                          type="image/webp"
+                          width="258"
+                          height="253"
+                          srcset="img/reviews-desktop-1@1x.webp 1x, img/reviews-desktop-1@2x.webp 2x">
+
+                  <source media="(min-width: 768px)"
+                          type="image/webp"
+                          width="186"
+                          height="237"
+                          srcset="img/reviews-tablet-1@1x.webp 1x, img/reviews-tablet-1@2x.webp 2x">
+
+                  <source type="image/webp"
+                          width="250"
+                          height="169"
+                          srcset="img/reviews-mobile-1@1x.webp 1x, img/reviews-mobile-1@2x.webp 2x">
+
+                  <source media="(min-width: 1440px)"
+                          type="image/jpeg"
+                          width="258"
+                          height="253"
+                          srcset="img/reviews-desktop-1@1x.jpg 1x, img/reviews-desktop-1@2x.jpg 2x">
+
+                  <source media="(min-width: 768px)"
+                          type="image/jpeg"
+                          width="186"
+                          height="237"
+                          srcset="img/reviews-tablet-1@1x.jpg 1x, img/reviews-tablet-1@2x.jpg 2x">
+
+                  <img class="reviews__image"
+                       src="img/reviews-mobile-1@1x.jpg"
+                       srcset="img/reviews-mobile-1@2x.jpg 2x"
+                       width="250"
+                       height="169"
+                       alt="Фото автора отзыва">
+                </picture>
+
+                <div class="reviews__paragraph-wrap">
+                  <p>Осенью ходили в&nbsp;поход на&nbsp;Алтай с&nbsp;друзьями. Впечатления потрясающие! Инструкторы, настоящие эксперты, всему научили, все показали. Делились историями о&nbsp;местах, людях, культуре места.</p>
+
+                  <p>С&nbsp;уверенностью могу сказать, что жизнь разделилась на&nbsp;до&nbsp;этого и&nbsp;после. Ещё никогда не&nbsp;отдыхал так душой и&nbsp;телом. Всем очень рекомендую!</p>
+                </div>
+
+                <h3 class="reviews__author-coment">Фролов Александр</h3>
+                <span class="reviews__about-author">38 лет, Москва</span>
+              </li>
+              <li class="reviews__item swiper-slide">
+                <picture>
+                  <source media="(min-width: 1440px)"
+                          type="image/webp"
+                          width="258"
+                          height="253"
+                          srcset="img/reviews-desktop-1@1x.webp 1x, img/reviews-desktop-1@2x.webp 2x">
+
+                  <source media="(min-width: 768px)"
+                          type="image/webp"
+                          width="186"
+                          height="237"
+                          srcset="img/reviews-tablet-2@1x.webp 1x, img/reviews-tablet-2@2x.webp 2x">
+
+                  <source type="image/webp"
+                          width="250"
+                          height="169"
+                          srcset="img/reviews-mobile-2@1x.webp 1x, img/reviews-mobile-2@2x.webp 2x">
+
+                  <source media="(min-width: 1440px)"
+                          type="image/jpeg"
+                          width="258"
+                          height="253"
+                          srcset="img/reviews-desktop-2@1x.jpg 1x, img/reviews-desktop-2@2x.jpg 2x">
+
+                  <source media="(min-width: 768px)"
+                          type="image/jpeg"
+                          width="186"
+                          height="237"
+                          srcset="img/reviews-tablet-2@1x.jpg 1x, img/reviews-tablet-2@2x.jpg 2x">
+
+                  <img class="reviews__image"
+                       src="img/reviews-mobile-2@1x.jpg"
+                       srcset="img/reviews-mobile-2@2x.jpg 2x"
+                       width="250"
+                       height="169"
+                       alt="Фото автора отзыва">
+                </picture>
+
+                <div class="reviews__paragraph-wrap">
+                  <p>Осенью ходили в&nbsp;поход на&nbsp;Алтай с&nbsp;друзьями. Впечатления потрясающие! Инструкторы, настоящие эксперты, всему научили, все показали. Делились историями о&nbsp;местах, людях, культуре места.</p>
+
+                  <p>С&nbsp;уверенностью могу сказать, что жизнь разделилась на&nbsp;до&nbsp;этого и&nbsp;после. Ещё никогда не&nbsp;отдыхал так душой и&nbsp;телом. Всем очень рекомендую!</p>
+                </div>
+
+                <h3 class="reviews__author-coment">Фролов Александр</h3>
+                <span class="reviews__about-author">38 лет, Москва</span>
+              </li>
+
+              <li class="reviews__item swiper-slide">
+                <picture>
+                  <source media="(min-width: 1440px)"
+                          type="image/webp"
+                          width="258"
+                          height="253"
+                          srcset="img/reviews-desktop-3@1x.webp 1x, img/reviews-desktop-3@2x.webp 2x">
+
+                  <source media="(min-width: 768px)"
+                          type="image/webp"
+                          width="186"
+                          height="237"
+                          srcset="img/reviews-tablet-3@1x.webp 1x, img/reviews-tablet-3@2x.webp 2x">
+
+                  <source type="image/webp"
+                          width="250"
+                          height="169"
+                          srcset="img/reviews-mobile-3@1x.webp 1x, img/reviews-mobile-3@2x.webp 2x">
+
+                  <source media="(min-width: 1440px)"
+                          type="image/jpeg"
+                          width="258"
+                          height="253"
+                          srcset="img/reviews-desktop-3@1x.jpg 1x, img/reviews-desktop-3@2x.jpg 2x">
+
+                  <source media="(min-width: 768px)"
+                          type="image/jpeg"
+                          width="186"
+                          height="237"
+                          srcset="img/reviews-tablet-3@1x.jpg 1x, img/reviews-tablet-3@2x.jpg 2x">
+
+                  <img class="reviews__image"
+                       src="img/reviews-mobile-3@1x.jpg"
+                       srcset="img/reviews-mobile-3@2x.jpg 2x"
+                       width="250"
+                       height="169"
+                       alt="Фото автора отзыва">
+                </picture>
+
+                <div class="reviews__paragraph-wrap">
+                  <p>Осенью ходили в&nbsp;поход на&nbsp;Алтай с&nbsp;друзьями. Впечатления потрясающие! Инструкторы, настоящие эксперты, всему научили, все показали. Делились историями о&nbsp;местах, людях, культуре места.</p>
+
+                  <p>С&nbsp;уверенностью могу сказать, что жизнь разделилась на&nbsp;до&nbsp;этого и&nbsp;после. Ещё никогда не&nbsp;отдыхал так душой и&nbsp;телом. Всем очень рекомендую!</p>
+                </div>
+
+                <h3 class="reviews__author-coment">Фролов Александр</h3>
+                <span class="reviews__about-author">38 лет, Москва</span>
+              </li>
+
+              <li class="reviews__item swiper-slide">
+                <picture>
+                  <source media="(min-width: 1440px)"
+                          type="image/webp"
+                          width="258"
+                          height="253"
+                          srcset="img/reviews-desktop-4@1x.webp 1x, img/reviews-desktop-4@2x.webp 2x">
+
+                  <source media="(min-width: 768px)"
+                          type="image/webp"
+                          width="186"
+                          height="237"
+                          srcset="img/reviews-tablet-4@1x.webp 1x, img/reviews-tablet-4@2x.webp 2x">
+
+                  <source type="image/webp"
+                          width="250"
+                          height="169"
+                          srcset="img/reviews-mobile-4@1x.webp 1x, img/reviews-mobile-4@2x.webp 2x">
+
+                  <source media="(min-width: 1440px)"
+                          type="image/jpeg"
+                          width="258"
+                          height="253"
+                          srcset="img/reviews-desktop-4@1x.jpg 1x, img/reviews-desktop-4@2x.jpg 2x">
+
+                  <source media="(min-width: 768px)"
+                          type="image/jpeg"
+                          width="186"
+                          height="237"
+                          srcset="img/reviews-tablet-4@1x.jpg 1x, img/reviews-tablet-4@2x.jpg 2x">
+
+                  <img class="reviews__image"
+                       src="img/reviews-mobile-4@1x.jpg"
+                       srcset="img/reviews-mobile-4@2x.jpg 2x"
+                       width="250"
+                       height="169"
+                       alt="Фото автора отзыва">
+                </picture>
+
+                <div class="reviews__paragraph-wrap">
+                  <p>Осенью ходили в&nbsp;поход на&nbsp;Алтай с&nbsp;друзьями. Впечатления потрясающие! Инструкторы, настоящие эксперты, всему научили, все показали. Делились историями о&nbsp;местах, людях, культуре места.</p>
+
+                  <p>С&nbsp;уверенностью могу сказать, что жизнь разделилась на&nbsp;до&nbsp;этого и&nbsp;после. Ещё никогда не&nbsp;отдыхал так душой и&nbsp;телом. Всем очень рекомендую!</p>
+                </div>
+
+                <h3 class="reviews__author-coment">Фролов Александр</h3>
+                <span class="reviews__about-author">38 лет, Москва</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <div data-test="adv" id="adv">adv</div>
       <div data-test="gallery">gallery</div>
       <div data-test="form">
         <div class="form__contacts" id="contacts"></div>
       </div>
     </main>
-
     <footer data-test="footer">footer</footer>
     <script type="module" src="js/main.js"></script>
   </body>

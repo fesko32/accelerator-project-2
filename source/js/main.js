@@ -36,6 +36,7 @@ const swiper2 = new Swiper('.tours__swiper.swiper', {
     336: {
       slidesPerView: 1,
       slidesPerGroup: 1,
+
     },
     768: {
       slidesPerView: 2,
@@ -50,21 +51,62 @@ const swiper2 = new Swiper('.tours__swiper.swiper', {
   },
 });
 
+const startSlides = {
+  320: 2,
+  768: 0,
+  1440: 0
+};
+
+function getStartSlide() {
+  const width = window.innerWidth;
+  if (width >= 1440) return startSlides[1440];
+  if (width >= 768) return startSlides[768];
+  return startSlides[320];
+}
+
 const swiper3 = new Swiper('.training-swiper.swiper', {
   modules: [Navigation],
   loop: false,
-  initialSlide: 0,
+  initialSlide: getStartSlide(), // Правильно вычисляется
   preloadImages: false,
   lazy: true,
-  slidesPerView: 1,
   slidesPerGroup: 1,
+  slidesPerView: 1,  // 👈 Укажем пока 1, но потом подумаем
   navigation: {
     nextEl: '.training__button.arrow-button--next',
     prevEl: '.training__button.arrow-button--prev',
   },
   breakpoints: {
     336: {
-      slidesPerView: 1,
+      slidesPerView: 1, // 👈 Чтобы реально видеть, что переключился
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1440: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
+});
+
+
+const swiper4 = new Swiper('.reviews__swiper-container.swiper', {
+  modules: [Navigation],
+  loop: false,
+  initialSlide: 0, // Правильно вычисляется
+  preloadImages: false,
+  lazy: true,
+  slidesPerGroup: 1,
+  slidesPerView: 1,  // 👈 Укажем пока 1, но потом подумаем
+  // navigation: {
+  //   nextEl: '.training__button.arrow-button--next',
+  //   prevEl: '.training__button.arrow-button--prev',
+  // },
+  breakpoints: {
+    336: {
+      slidesPerView: 1, // 👈 Чтобы реально видеть, что переключился
     },
     768: {
       slidesPerView: 3,

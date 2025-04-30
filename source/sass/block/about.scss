@@ -1,0 +1,168 @@
+.about {
+  overflow: hidden;
+}
+.about__inner-wrap {
+  width: 100%;
+  position: relative;
+  padding-top: 20px;
+
+  @include vp-768 {
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+  }
+
+  @include vp-1440 {
+    padding-top: 100px;
+
+    padding-bottom: 100px;
+  }
+}
+.container {
+}
+.about__picture-wrap {
+  @include vp-768 {
+    min-width: 450px;
+    position: relative;
+  }
+
+  @include vp-1440 {
+
+  }
+  picture {
+
+  }
+}
+.about__image {
+  display: block;
+  width: 100%;
+  margin: 0px 0 17px 0;
+  @include vp-768 {
+    width: 542px;
+    bottom: -144px;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    margin: 0;
+  }
+
+  @include vp-1440 {
+    width: 660px;
+    top: -210px;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+.about__content-wrap {
+  @include vp-768 {
+    padding-left: 0;
+
+  }
+
+  @include vp-1440 {
+    padding-left: 210px;
+    padding-top: 45px;
+  }
+
+  h2 {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 100%;
+    margin: 0 0 42px 0;
+    position: relative;
+
+    @include vp-768 {
+      font-size: 25px;
+      margin: 0px 0 48px 0;
+    }
+
+    @include vp-1440 {
+      font-size: 35px;
+      margin: 0px 0 59px 0;
+    }
+
+    &::before {
+      content: 'О нас';
+      position: absolute;
+      bottom: 12px;
+      left: 0;
+      opacity: 0.03;
+      font-weight: 800;
+      font-size: 26px;
+      line-height: 100%;
+
+      @include vp-768 {
+        width: 542px;
+        font-size: 40px;
+        bottom: 0;
+      }
+
+      @include vp-1440 {
+        font-size: 55px;
+        bottom: 19px;
+      }
+    }
+
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    margin: 0;
+    padding: 0;
+
+    @include vp-768 {
+      gap: 29px;
+    }
+
+    @include vp-1440 {
+      gap: 28px;
+    }
+  }
+
+  li {
+    list-style: none;
+  }
+  li h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    margin: 0px 0 13px 0;
+
+    @include vp-768 {
+      font-size: 18px;
+      margin: 0px 0 11px 0;
+    }
+
+    @include vp-1440 {
+      font-size: 21px;
+      margin: 0px 0 17px 0;
+    }
+  }
+
+  li p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 143%;
+    br {
+      display: none;
+    }
+    @include vp-768 {
+      width: 270px;
+      font-size: 16px;
+      line-height: 150%;
+
+    }
+
+    @include vp-1440 {
+      font-size: 14px;
+      line-height: 157%;
+      width: 600px;
+    }
+  }
+
+
+}
+

@@ -9,20 +9,22 @@
 
 /* GLOBAL */
 // ---------------------------------
-@import "global/variables";
-@import "global/mixins";
-@import "global/fonts";
-@import "global/global";
-@import "global/visually-hidden";
+@import "global/variables.scss";
+@import "global/mixins.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
+@import "global/visually-hidden.scss";
 
 // ---------------------------------
 
 /* BLOCK */
 // ---------------------------------
-@import "block/arrow-buttons";
-@import "block/social-icons";
-@import "block/hero";
-@import "block/tours";
-@import "block/training";
+@import "block/arrow-buttons.scss";
+@import "block/social-icons.scss";
+@import "block/hero.scss";
+@import "block/tours.scss";
+@import "block/training.scss";
+@import "block/about.scss";
+@import "block/reviews.scss";
 
 // ---------------------------------
