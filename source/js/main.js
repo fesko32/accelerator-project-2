@@ -92,7 +92,7 @@ const swiper3 = new Swiper('.training-swiper.swiper', {
 });
 
 
-const swiper4 = new Swiper('.reviews__swiper-container.swiper', {
+const swiper4 = new Swiper('.reviews__swiper.swiper', {
   modules: [Navigation],
   loop: false,
   initialSlide: 0, // Правильно вычисляется
@@ -100,13 +100,14 @@ const swiper4 = new Swiper('.reviews__swiper-container.swiper', {
   lazy: true,
   slidesPerGroup: 1,
   slidesPerView: 1,  // 👈 Укажем пока 1, но потом подумаем
-  // navigation: {
-  //   nextEl: '.training__button.arrow-button--next',
-  //   prevEl: '.training__button.arrow-button--prev',
-  // },
+  navigation: {
+    nextEl: '.reviews__button.arrow-button--next',
+    prevEl: '.reviews__button.arrow-button--prev',
+  },
   breakpoints: {
     336: {
-      slidesPerView: 1, // 👈 Чтобы реально видеть, что переключился
+      slidesPerView: 1,
+      spaceBetween: 5,
     },
     768: {
       slidesPerView: 3,

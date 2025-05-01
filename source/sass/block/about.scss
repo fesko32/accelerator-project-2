@@ -5,6 +5,7 @@
   width: 100%;
   position: relative;
   padding-top: 20px;
+  padding-bottom: 21px;
 
   @include vp-768 {
     display: flex;
@@ -37,6 +38,7 @@
   display: block;
   width: 100%;
   margin: 0px 0 17px 0;
+  object-fit: cover;
   @include vp-768 {
     width: 542px;
     bottom: -144px;

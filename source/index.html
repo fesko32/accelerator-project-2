@@ -1154,8 +1154,19 @@
       <section class="reviews" data-test="reviews" id="revieЗws">
         <div class="reviews__inner-wrap container">
           <h2 class="reviews__title">Отзывы</h2>
-
-          <div class="reviews__swiper-container swiper">
+          <div class="reviews__button-wrap">
+            <button class="reviews__button arrow-button arrow-button--prev" type="button" aria-label="Переключить предыдущий слайд">
+              <svg width="14" height="9">
+                <use href="/__spritemap#sprite-arrow-button"></use>
+              </svg>
+            </button>
+            <button class="reviews__button arrow-button arrow-button--next" type="button"  aria-label="Переключить следующий слайд">
+              <svg width="14" height="9">
+                <use href="/__spritemap#sprite-arrow-button"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="reviews__swiper swiper">
             <ul class="reviews__list swiper-wrapper">
               <li class="reviews__item swiper-slide">
                 <picture>
@@ -1205,13 +1216,14 @@
                 <h3 class="reviews__author-coment">Фролов Александр</h3>
                 <span class="reviews__about-author">38 лет, Москва</span>
               </li>
+
               <li class="reviews__item swiper-slide">
                 <picture>
                   <source media="(min-width: 1440px)"
                           type="image/webp"
                           width="258"
                           height="253"
-                          srcset="img/reviews-desktop-1@1x.webp 1x, img/reviews-desktop-1@2x.webp 2x">
+                          srcset="img/reviews-desktop-2@1x.webp 1x, img/reviews-desktop-2@2x.webp 2x">
 
                   <source media="(min-width: 768px)"
                           type="image/webp"
