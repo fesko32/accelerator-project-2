@@ -95,27 +95,76 @@ const swiper3 = new Swiper('.training-swiper.swiper', {
 const swiper4 = new Swiper('.reviews__swiper.swiper', {
   modules: [Navigation],
   loop: false,
-  initialSlide: 0, // Правильно вычисляется
+  initialSlide: 0,
   preloadImages: false,
   lazy: true,
   slidesPerGroup: 1,
-  slidesPerView: 1,  // 👈 Укажем пока 1, но потом подумаем
+  slidesPerView: 1,
   navigation: {
     nextEl: '.reviews__button.arrow-button--next',
     prevEl: '.reviews__button.arrow-button--prev',
   },
+
   breakpoints: {
     336: {
       slidesPerView: 1,
       spaceBetween: 5,
     },
     768: {
-      slidesPerView: 3,
-      spaceBetween: 20,
+      slidesPerView: 'auto',
+      spaceBetween: 30,
     },
     1440: {
-      slidesPerView: 4,
-      spaceBetween: 20,
+      slidesPerView: 'auto',
+      spaceBetween: 120,
     },
   },
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  let mySwiper = null;
+
+  function initSwiperOnDesktop() {
+    const swiperContainer = document.querySelector('.adv__swiper.swiper');
+    const swiperWrapper = swiperContainer.querySelector('.adv__list.swiper-wrapper');
+    const slides = swiperWrapper.querySelectorAll('.adv__item.swiper-slide');
+
+    if (window.innerWidth >= 1440) {
+      if (slides.length === 5) {
+        const sixthSlide = slides[0].cloneNode(true);
+        sixthSlide.setAttribute('data-cloned', 'true');
+        swiperWrapper.append(sixthSlide);
+      }
+      if (!mySwiper) {
+        mySwiper = new Swiper(swiperContainer, {
+          modules: [Navigation],
+          slideElement: 'li',
+          initialSlide: 2,
+          slidesPerView: 'auto',
+          slidesPerGroup: 2,
+          centeredSlides: 2,
+          loop: true,
+          spaceBetween: 30,
+          navigation: {
+            nextEl: '.adv__button.arrow-button--next',
+            prevEl: '.adv__button.arrow-button--prev',
+          },
+        });
+      }
+    } else {
+      if (mySwiper) {
+        mySwiper.destroy(true, true);
+        mySwiper = null;
+      }
+    }
+  }
+
+  initSwiperOnDesktop();
+
+  // // Обработка ресайза
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(initSwiperOnDesktop, 250);
+  });
 });

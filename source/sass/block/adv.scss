@@ -1,0 +1,161 @@
+.adv {
+}
+.adv__inner-wrap {
+
+  padding-bottom: 20px;
+
+  @include vp-768 {
+    padding-top: 40px
+  }
+
+  @include vp-1440 {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+.adv__title {
+  margin: 0 0 20px 0;
+  padding: 5px 0 17px 0;
+  font-size: 22px;
+  line-height: 100%;
+  font-weight: 800;
+  text-align: center;
+
+  @include vp-768 {
+    font-size: 25px;
+    margin: 0 0 50px 0;
+    padding: 4px 0 11px 0;
+  }
+}
+
+.adv__swiper  {
+  @include vp-1440 {
+    // overflow: hidden;
+
+  }
+}
+.adv__list {
+  @include vp-1440 {
+  width: 1440px;
+}
+}
+.adv__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @include vp-768 {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+    gap: 30px;
+  }
+
+  @include vp-1440 {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    margin-bottom: 50px;
+  }
+}
+
+.adv__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 20px 10px;
+  outline: 1px solid rgba(#0266C1, .2);
+
+  @include vp-768 {
+    min-height: 340px;
+    padding: 28px 20px;
+
+    &:last-child {
+      width: 322px;
+      justify-self: center;
+      grid-column: 1 / -1;
+    }
+  }
+
+  @include vp-1440 {
+    width: 380px;
+    padding: 40px 20px;
+  }
+  @include vp-1440 {
+    width: 380px;
+    &:last-child {
+      width: 380px;
+    }
+  }
+
+
+}
+
+.adv__list.swiper-wrapper .adv__item.swiper-slide {
+  @include vp-1440 {
+    width: 380px; /* если slidesPerView: 'auto' */
+    flex-shrink: 0
+  }
+}
+
+
+
+.adv__image {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  padding: 8px;
+  border: 1px solid #0266C1;
+  margin: 0px 0 20px 0;
+
+  @include vp-768 {
+    padding: 12px;
+    margin: 0px 0 25px 0;
+  }
+}
+.adv__subtitle {
+  margin: 0 0 15px 0;
+  line-height: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+
+  @include vp-768 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+  }
+
+  &--width {
+    width: 175px;
+
+    @include vp-768 {
+      width: 200px;
+    }
+  }
+}
+.adv__paragraph {
+  text-align: center;
+  margin: 0;
+  font-size: 12px;
+  line-height: 150%;
+
+  @include vp-768 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+  }
+}
+
+.adv__button-wrap {
+  @include vp-1440 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 4px;
+  }
+}

@@ -323,7 +323,11 @@
 
     // background-position: right 0;
   }
-}
+  }
+
+  @include vp-1440 {
+    padding-bottom: 24px;
+  }
 }
 
 .training__process-title {
